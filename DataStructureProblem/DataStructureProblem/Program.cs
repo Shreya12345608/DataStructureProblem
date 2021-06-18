@@ -15,6 +15,7 @@ namespace DataStructureProblem
             Console.WriteLine("Press 2 for Insertion Sort Problem");
             Console.WriteLine("Press 3 for Permutation Problem");
             Console.WriteLine("Press 4 for Anagram Problem");
+            Console.WriteLine("Press 5 for Prime Number");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -50,6 +51,13 @@ namespace DataStructureProblem
                     anagram.Check();
                     Console.ReadKey();
                     break;
+                case 5:
+                    //PrimeNumber
+                    PrimeNumbers primeNumbers = new PrimeNumbers();
+                    primeNumbers.PrimeNum();
+                    Console.ReadKey();
+                    break;
+                    
                 default:
                     Console.WriteLine("Invalid Selection. Enter a valid option:");
                     break;
@@ -57,4 +65,5 @@ namespace DataStructureProblem
         }
     }
 }
+
 

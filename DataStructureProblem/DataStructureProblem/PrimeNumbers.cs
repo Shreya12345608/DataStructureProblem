@@ -65,7 +65,7 @@ namespace DataStructureProblem
                             sum = sum * 10 + rem;
                             value = value / 10;
                         }
-                    if (sum == array[e])
+                    if (sum == array[var_e])
                     {
                         Console.Write("palendrome " + array[var_e] + " ");
                     }

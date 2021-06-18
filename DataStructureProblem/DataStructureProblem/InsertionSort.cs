@@ -39,7 +39,7 @@ namespace DataStructureProblem
                 while ((array_j >= 0) && (array[array_j].CompareTo(value) > 0))
                 {
                     // moving the left side element to one position forward.
-                    array[array_j + 1] = array[j];
+                    array[array_j + 1] = array[array_j];
                     array_j--;
                 }
                 // moving current element to its  correct position.

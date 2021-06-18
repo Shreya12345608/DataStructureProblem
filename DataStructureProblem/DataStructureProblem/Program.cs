@@ -13,6 +13,7 @@ namespace DataStructureProblem
             Console.WriteLine("Data Structure Problems");
             Console.WriteLine("Press 1 for Bubble Sort Problem");
             Console.WriteLine("Press 2 for Insertion Sort Problem");
+            Console.WriteLine("Press 3 for Permutation Problem");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -33,6 +34,13 @@ namespace DataStructureProblem
                 case 2:
                     //insertion sort 
                     InsertionSort.sort();
+                    Console.ReadKey();
+                    break;
+                 case 3:
+                    Permutation permutation = new Permutation();
+                    String str = "Shreya";
+                    int Outputs = str.Length;
+                    Permutation.Permute(str, 0, Outputs - 1);
                     Console.ReadKey();
                     break;
                 default:

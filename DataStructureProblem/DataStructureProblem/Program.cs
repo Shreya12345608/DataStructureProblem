@@ -14,6 +14,7 @@ namespace DataStructureProblem
             Console.WriteLine("Press 1 for Bubble Sort Problem");
             Console.WriteLine("Press 2 for Insertion Sort Problem");
             Console.WriteLine("Press 3 for Permutation Problem");
+            Console.WriteLine("Press 4 for Anagram Problem");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -41,6 +42,12 @@ namespace DataStructureProblem
                     String str = "Shreya";
                     int Outputs = str.Length;
                     Permutation.Permute(str, 0, Outputs - 1);
+                    Console.ReadKey();
+                    break;
+                case 4:
+                    //Anagram  
+                    Anagram anagram = new Anagram();
+                    anagram.Check();
                     Console.ReadKey();
                     break;
                 default:
